@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>캐릭터 소개 - BNO COMPANY</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="header-container container">
             <div class="logo">
-                <a href="/">BNO COMPANY</a>
+                <a href="../index.html">BNO COMPANY</a>
             </div>
             <nav>
                 <button class="menu-toggle">☰</button>
                 <ul>
-                    <li><a href="/company/">회사 소개</a>
+                    <li><a href="../company/index.html">회사 소개</a>
                         <ul class="submenu">
-                            <li><a href="/apps/">앱 소개</a></li>
+                            <li><a href="../apps/index.html">앱 소개</a></li>
                         </ul>
                     </li>
-                    <li><a href="/characters/" class="active">캐릭터 소개</a></li>
-                    <li><a href="/products/">상품</a>
+                    <li><a href="../characters/index.html" class="active">캐릭터 소개</a></li>
+                    <li><a href="../products/index.html">상품</a>
                         <ul class="submenu">
-                            <li><a href="/products/#keyring">키링</a></li>
-                            <li><a href="/products/#doll">인형</a></li>
-                            <li><a href="/products/#others">그 외</a></li>
+                            <li><a href="../products/index.html#keyring">키링</a></li>
+                            <li><a href="../products/index.html#doll">인형</a></li>
+                            <li><a href="../products/index.html#others">그 외</a></li>
                         </ul>
                     </li>
-                    <li><a href="/terms/">약관</a></li>
-                    <li><a href="/contact/">CONTACT US</a></li>
+                    <li><a href="../terms/index.html">약관</a></li>
+                    <li><a href="../contact/index.html">CONTACT US</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,58 +43,68 @@
             </div>
         </section>
 
-        <section class="characters">
-            <div class="container">
-                <div class="section-header">
-                    <h2>BNO COMPANY의 캐릭터들</h2>
-                    <p>사랑스럽고 개성 넘치는 캐릭터들을 소개합니다</p>
-                </div>
-                <div class="character-grid">
-                    <div id="character1" class="character-card">
-                        <div class="character-img">캐릭터 1 이미지</div>
-                        <div class="character-content">
-                            <h3>캐릭터 1</h3>
-                            <p>캐릭터 1에 대한 자세한 소개입니다. 이 캐릭터의 특징과 성격, 배경 이야기 등을 설명합니다.</p>
-                            <a href="/products/#keyring" class="btn">관련 상품 보기</a>
-                        </div>
-                    </div>
-                    <div id="character2" class="character-card">
-                        <div class="character-img">캐릭터 2 이미지</div>
-                        <div class="character-content">
-                            <h3>캐릭터 2</h3>
-                            <p>캐릭터 2에 대한 자세한 소개입니다. 이 캐릭터의 특징과 성격, 배경 이야기 등을 설명합니다.</p>
-                            <a href="/products/#doll" class="btn">관련 상품 보기</a>
-                        </div>
-                    </div>
-                </div>
+        <section class="container" style="padding: 60px 0;">
+            <div class="section-header">
+                <h2>BNO COMPANY의 캐릭터</h2>
+                <p>독특한 개성을 가진 BNO COMPANY의 캐릭터들을 소개합니다</p>
             </div>
-        </section>
-
-        <section class="features" style="background-color: #f5f5f5;">
-            <div class="container">
-                <div class="section-header">
-                    <h2>캐릭터 스토리</h2>
-                    <p>BNO COMPANY 캐릭터들의 세계관</p>
-                </div>
-                <div class="app-container">
-                    <div class="app-info">
-                        <h3>캐릭터 세계관</h3>
-                        <p>BNO COMPANY의 캐릭터들은 모두 독특한 세계관 속에서 살아가고 있습니다. 각 캐릭터는 저마다의 이야기와 개성을 가지고 있으며, 다양한 모험을 경험합니다.</p>
-                        <p>이 세계관은 우리의 앱과 상품을 통해 더욱 풍부하게 경험할 수 있습니다. 캐릭터들의 이야기에 빠져보세요!</p>
-                        <a href="/apps/" class="btn">관련 앱 보기</a>
-                    </div>
-                    <div class="app-screenshot">
-                        <div class="feature-img" style="height: 400px;">캐릭터 세계관 이미지</div>
+            
+            <div class="character-grid">
+                <div class="character-card" id="character1">
+                    <div class="character-img">캐릭터 1 이미지</div>
+                    <div class="character-content">
+                        <h3>캐릭터 1</h3>
+                        <p>캐릭터 1에 대한 상세한 설명입니다. 이 캐릭터의 성격, 특징, 배경 이야기 등을 소개합니다.</p>
+                        <p>특징:</p>
+                        <ul style="margin-left: 20px; margin-bottom: 15px;">
+                            <li>특징 1</li>
+                            <li>특징 2</li>
+                            <li>특징 3</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="cta">
-            <div class="container">
-                <h2>캐릭터와 함께하세요</h2>
-                <p>BNO COMPANY의 캐릭터 상품으로 일상에 즐거움을 더하세요</p>
-                <a href="/products/" class="btn btn-outline">상품 보기</a>
+                
+                <div class="character-card" id="character2">
+                    <div class="character-img">캐릭터 2 이미지</div>
+                    <div class="character-content">
+                        <h3>캐릭터 2</h3>
+                        <p>캐릭터 2에 대한 상세한 설명입니다. 이 캐릭터의 성격, 특징, 배경 이야기 등을 소개합니다.</p>
+                        <p>특징:</p>
+                        <ul style="margin-left: 20px; margin-bottom: 15px;">
+                            <li>특징 1</li>
+                            <li>특징 2</li>
+                            <li>특징 3</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="character-card" id="character3">
+                    <div class="character-img">캐릭터 3 이미지</div>
+                    <div class="character-content">
+                        <h3>캐릭터 3</h3>
+                        <p>캐릭터 3에 대한 상세한 설명입니다. 이 캐릭터의 성격, 특징, 배경 이야기 등을 소개합니다.</p>
+                        <p>특징:</p>
+                        <ul style="margin-left: 20px; margin-bottom: 15px;">
+                            <li>특징 1</li>
+                            <li>특징 2</li>
+                            <li>특징 3</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="character-card" id="character4">
+                    <div class="character-img">캐릭터 4 이미지</div>
+                    <div class="character-content">
+                        <h3>캐릭터 4</h3>
+                        <p>캐릭터 4에 대한 상세한 설명입니다. 이 캐릭터의 성격, 특징, 배경 이야기 등을 소개합니다.</p>
+                        <p>특징:</p>
+                        <ul style="margin-left: 20px; margin-bottom: 15px;">
+                            <li>특징 1</li>
+                            <li>특징 2</li>
+                            <li>특징 3</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -111,11 +121,11 @@
                 <div class="footer-section">
                     <h3>바로가기</h3>
                     <ul>
-                        <li><a href="/company/">회사 소개</a></li>
-                        <li><a href="/characters/">캐릭터 소개</a></li>
-                        <li><a href="/products/">상품</a></li>
-                        <li><a href="/terms/">약관</a></li>
-                        <li><a href="/contact/">CONTACT US</a></li>
+                        <li><a href="../company/index.html">회사 소개</a></li>
+                        <li><a href="../characters/index.html">캐릭터 소개</a></li>
+                        <li><a href="../products/index.html">상품</a></li>
+                        <li><a href="../terms/index.html">약관</a></li>
+                        <li><a href="../contact/index.html">CONTACT US</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -133,11 +143,7 @@
         </div>
     </footer>
 
-    <script>
-        // 모바일 메뉴 토글
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('nav').classList.toggle('active');
-        });
-    </script>
+    <script src="../js/url-handler.js"></script>
+    <script src="../js/common.js"></script>
 </body>
 </html>

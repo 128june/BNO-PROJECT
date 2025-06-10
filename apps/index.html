@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>앱 소개 - BNO COMPANY</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="header-container container">
             <div class="logo">
-                <a href="/">BNO COMPANY</a>
+                <a href="../index.html">BNO COMPANY</a>
             </div>
             <nav>
                 <button class="menu-toggle">☰</button>
                 <ul>
-                    <li><a href="/company/">회사 소개</a>
+                    <li><a href="../company/index.html">회사 소개</a>
                         <ul class="submenu">
-                            <li><a href="/apps/" class="active">앱 소개</a></li>
+                            <li><a href="../apps/index.html" class="active">앱 소개</a></li>
                         </ul>
                     </li>
-                    <li><a href="/characters/">캐릭터 소개</a></li>
-                    <li><a href="/products/">상품</a>
+                    <li><a href="../characters/index.html">캐릭터 소개</a></li>
+                    <li><a href="../products/index.html">상품</a>
                         <ul class="submenu">
-                            <li><a href="/products/#keyring">키링</a></li>
-                            <li><a href="/products/#doll">인형</a></li>
-                            <li><a href="/products/#others">그 외</a></li>
+                            <li><a href="../products/index.html#keyring">키링</a></li>
+                            <li><a href="../products/index.html#doll">인형</a></li>
+                            <li><a href="../products/index.html#others">그 외</a></li>
                         </ul>
                     </li>
-                    <li><a href="/terms/">약관</a></li>
-                    <li><a href="/contact/">CONTACT US</a></li>
+                    <li><a href="../terms/index.html">약관</a></li>
+                    <li><a href="../contact/index.html">CONTACT US</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,80 +43,41 @@
             </div>
         </section>
 
-        <section id="app1" class="app-showcase">
-            <div class="container">
-                <div class="app-container">
-                    <div class="app-info">
-                        <h2>앱 1</h2>
-                        <p>앱 1에 대한 자세한 소개입니다. 이 앱의 주요 기능과 특징, 사용자 경험 등을 설명합니다.</p>
-                        <p>BNO COMPANY는 사용자 경험을 최우선으로 생각하며, 직관적인 인터페이스와 강력한 기능을 제공합니다.</p>
-                        <div class="app-buttons">
-                            <a href="#" class="btn">App Store</a>
-                            <a href="#" class="btn">Google Play</a>
-                        </div>
-                    </div>
-                    <div class="app-screenshot">
-                        <div class="feature-img" style="height: 400px;">앱 1 스크린샷</div>
-                    </div>
-                </div>
+        <section class="container" style="padding: 60px 0;">
+            <div class="section-header">
+                <h2>BNO COMPANY의 앱</h2>
+                <p>혁신적인 기능과 직관적인 디자인의 앱을 소개합니다</p>
             </div>
-        </section>
-
-        <section id="app2" class="app-showcase" style="background-color: #f5f5f5;">
-            <div class="container">
-                <div class="app-container">
-                    <div class="app-screenshot">
-                        <div class="feature-img" style="height: 400px;">앱 2 스크린샷</div>
-                    </div>
-                    <div class="app-info">
-                        <h2>앱 2</h2>
-                        <p>앱 2에 대한 자세한 소개입니다. 이 앱의 주요 기능과 특징, 사용자 경험 등을 설명합니다.</p>
-                        <p>BNO COMPANY는 사용자 경험을 최우선으로 생각하며, 직관적인 인터페이스와 강력한 기능을 제공합니다.</p>
-                        <div class="app-buttons">
-                            <a href="#" class="btn">App Store</a>
-                            <a href="#" class="btn">Google Play</a>
-                        </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" id="app1">
+                    <div class="feature-img">앱 1 이미지</div>
+                    <div class="feature-content">
+                        <h3>앱 1</h3>
+                        <p>앱 1에 대한 상세한 설명입니다. 이 앱은 사용자들에게 어떤 가치를 제공하며, 어떤 문제를 해결하는지 설명합니다.</p>
+                        <p>주요 기능:</p>
+                        <ul style="margin-left: 20px; margin-bottom: 15px;">
+                            <li>기능 1</li>
+                            <li>기능 2</li>
+                            <li>기능 3</li>
+                        </ul>
+                        <a href="#" class="btn">다운로드</a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="features">
-            <div class="container">
-                <div class="section-header">
-                    <h2>앱 특징</h2>
-                    <p>BNO COMPANY 앱의 주요 특징</p>
-                </div>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-content">
-                            <h3>사용자 중심 디자인</h3>
-                            <p>사용자의 편의성을 최우선으로 고려한 직관적인 인터페이스를 제공합니다.</p>
-                        </div>
+                
+                <div class="feature-card" id="app2">
+                    <div class="feature-img">앱 2 이미지</div>
+                    <div class="feature-content">
+                        <h3>앱 2</h3>
+                        <p>앱 2에 대한 상세한 설명입니다. 이 앱은 사용자들에게 어떤 가치를 제공하며, 어떤 문제를 해결하는지 설명합니다.</p>
+                        <p>주요 기능:</p>
+                        <ul style="margin-left: 20px; margin-bottom: 15px;">
+                            <li>기능 1</li>
+                            <li>기능 2</li>
+                            <li>기능 3</li>
+                        </ul>
+                        <a href="#" class="btn">다운로드</a>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-content">
-                            <h3>강력한 기능</h3>
-                            <p>다양한 기능을 통해 사용자의 일상을 더욱 편리하게 만들어 드립니다.</p>
-                        </div>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-content">
-                            <h3>지속적인 업데이트</h3>
-                            <p>사용자의 피드백을 반영한 지속적인 업데이트로 더 나은 경험을 제공합니다.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta">
-            <div class="container">
-                <h2>지금 바로 시작하세요</h2>
-                <p>BNO COMPANY의 앱으로 새로운 경험을 만나보세요</p>
-                <div class="app-buttons">
-                    <a href="#" class="btn">App Store</a>
-                    <a href="#" class="btn btn-outline">Google Play</a>
                 </div>
             </div>
         </section>
@@ -134,11 +95,11 @@
                 <div class="footer-section">
                     <h3>바로가기</h3>
                     <ul>
-                        <li><a href="/company/">회사 소개</a></li>
-                        <li><a href="/characters/">캐릭터 소개</a></li>
-                        <li><a href="/products/">상품</a></li>
-                        <li><a href="/terms/">약관</a></li>
-                        <li><a href="/contact/">CONTACT US</a></li>
+                        <li><a href="../company/index.html">회사 소개</a></li>
+                        <li><a href="../characters/index.html">캐릭터 소개</a></li>
+                        <li><a href="../products/index.html">상품</a></li>
+                        <li><a href="../terms/index.html">약관</a></li>
+                        <li><a href="../contact/index.html">CONTACT US</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -156,11 +117,7 @@
         </div>
     </footer>
 
-    <script>
-        // 모바일 메뉴 토글
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('nav').classList.toggle('active');
-        });
-    </script>
+    <script src="../js/url-handler.js"></script>
+    <script src="../js/common.js"></script>
 </body>
 </html>

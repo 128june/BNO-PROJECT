@@ -1,37 +1,51 @@
-// 모바일 메뉴 토글
+// 페이지 로드 시 실행되는 스크립트
 document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav');
+    // 페이지 로드 완료 후 페이드인 효과
+    document.body.classList.add('loaded');
     
-    if (menuToggle) {
-        menuToggle.addEventListener('click', function() {
-            nav.classList.toggle('active');
-        });
-    }
-    
-    // 서브메뉴가 있는 항목 클릭 처리 (모바일)
-    const menuItems = document.querySelectorAll('nav ul li');
-    menuItems.forEach(item => {
-        const link = item.querySelector('a');
-        const submenu = item.querySelector('.submenu');
+    // 스크롤 이벤트 처리
+    window.addEventListener('scroll', function() {
+        // 스크롤 위치에 따라 헤더 스타일 변경
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
         
-        if (submenu && window.innerWidth <= 768) {
-            link.addEventListener('click', function(e) {
-                if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    item.classList.toggle('active');
+        // 요소가 화면에 나타날 때 애니메이션 효과
+        const animatedElements = document.querySelectorAll('.animate-on-scroll');
+        animatedElements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            
+            if (elementPosition < windowHeight - 100) {
+                element.classList.add('animated');
+            }
+        });
+    });
+    
+    // 이미지 로드 지연 처리
+    const lazyImages = document.querySelectorAll('.lazy-load');
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy-load');
+                    imageObserver.unobserve(img);
                 }
             });
-        }
-    });
-    
-    // 현재 페이지 메뉴 활성화
-    const currentPage = window.location.pathname.split('/').pop();
-    const menuLinks = document.querySelectorAll('nav ul li a');
-    
-    menuLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-            link.classList.add('active');
-        }
-    });
+        });
+        
+        lazyImages.forEach(img => {
+            imageObserver.observe(img);
+        });
+    } else {
+        // IntersectionObserver를 지원하지 않는 브라우저를 위한 폴백
+        lazyImages.forEach(img => {
+            img.src = img.dataset.src;
+        });
+    }
 });
