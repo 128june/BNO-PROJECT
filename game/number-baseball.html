@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자야구 게임</title>
+    <link rel="stylesheet" href="number-baseball.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚾ 숫자야구 게임</h1>
+            <button id="restart-btn">다시 시작</button>
+        </div>
+        
+        <div class="game-info">
+            <p>1~9까지의 서로 다른 숫자 3개를 맞춰보세요!</p>
+            <p>🎯 Strike: 숫자와 위치가 모두 맞을 때</p>
+            <p>🔄 Ball: 숫자는 맞지만 위치가 틀릴 때</p>
+        </div>
+        
+        <div class="result-area">
+            <h2>📝 시도 기록</h2>
+            <div id="history"></div>
+        </div>
+        
+        <div id="message"></div>
+        
+        <div class="display-area">
+            <input type="text" id="user-input" readonly placeholder="숫자를 선택하세요">
+        </div>
+        
+        <div class="keypad">
+            <div class="keypad-row">
+                <button class="number-key" data-value="1">1</button>
+                <button class="number-key" data-value="2">2</button>
+                <button class="number-key" data-value="3">3</button>
+            </div>
+            <div class="keypad-row">
+                <button class="number-key" data-value="4">4</button>
+                <button class="number-key" data-value="5">5</button>
+                <button class="number-key" data-value="6">6</button>
+            </div>
+            <div class="keypad-row">
+                <button class="number-key" data-value="7">7</button>
+                <button class="number-key" data-value="8">8</button>
+                <button class="number-key" data-value="9">9</button>
+            </div>
+            <div class="keypad-row">
+                <button id="clear-btn">지우기</button>
+                <button id="submit-btn">확인</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="number-baseball.js"></script>
+</body>
+</html>
